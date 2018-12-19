@@ -1,0 +1,222 @@
+#container {
+	min-width: 100%;
+	max-width: 1600px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;	
+}
+/* Убираем скролл*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+/* Start header*/
+header {
+	background: url(../img/header.png) no-repeat center;
+	background-size: cover;
+	height: 750px;
+}
+.header-overlay {
+	background: url(../img/overlay.png) no-repeat center;
+	background-size: cover;
+	height: 750px;
+}
+.container {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row {    /* начало меню */
+	display: flex;
+	flex-direction: row;
+}
+.logo-holder {
+	width: 170px;
+	height: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navigation-holder {
+	width: 1000px;
+	height: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navigation-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	text-transform: uppercase;
+}
+.navigation-list__list-item {
+	padding-left: 30px;
+}
+.navigation-list__list-item a {
+	color: #e8e8e8;
+	text-decoration: none; 
+	font-size: 14px;
+	font-weight: bold;
+	transition: 0.2s ease-out;
+	padding-bottom: 7px;
+	border-bottom: 0px solid #9ec4ed;
+}	
+.navigation-list__list-item a:hover,
+.navigation-list__list-item a:focus,
+.navigation-list__list-item a:active {
+	color: #78a4df;
+	border-bottom: 1px solid #9ec4ed;
+	text-decoration: none;
+  padding-bottom: 3px;
+}
+.navigation-list__list-item a:active {
+	color: #fcb812;
+	border-bottom: 1px solid #fcb812;
+	text-decoration: none;
+  padding-bottom: 3px;
+}             /* конец меню */
+.header-content {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 208px;
+}
+.title-holder {
+	width: 630px;
+}
+.heading-1 {
+	font-size: 36px;
+	color: #e8e8e8;
+	font-weight: 700;
+	line-height: 60px;
+}
+.subtitle {
+	font-size: 17px;
+	color: #e8e8e8;
+	letter-spacing: -1px;
+}
+/* кнопка */
+.button {
+	height: 40px;
+	border-radius: 50px;
+	border: 1px solid #e8e8e8;
+	padding: 12px 24px 14px 24px;
+	font-size: 13px;
+	color: #e8e8e8;
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 34px;
+}
+.button:hover {
+	background-color: #78a4df;
+}
+/* иконка-вниз*/
+.icon {
+	padding: 144px 0 104px 0;
+}
+.icon-down {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5em;
+	font-size: 20px;
+	padding: 10px;
+}
+.icon-down:hover {
+	background-color: #78a4df;
+}
+/* End header*/
+.services {  /* Start services*/
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.heading-2 {
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #29323c;
+	text-align: center;
+	margin: 0 auto;
+}
+.subtitle_p {
+	color: #7e8185;
+	font-size: 14px;
+	padding-top: 16px;
+	text-align: center;
+	margin: 0 auto;
+}
+.laptop {
+	border-radius: 50%;
+	background-color: #2e3741;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+.services-column {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.services-icon {
+	width: 270px;
+}
+.services-icon img {
+	padding: 35px 30px;
+}
+.heading-4 {
+	font-size: 16px;
+	font-weight: 700;
+	padding-top:39px; 
+}
+.hr {
+	border: 1px solid #525961;
+	width: 40px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 59px;
+}
+.services-icon {
+	margin-right: 30px;
+	letter-spacing: -1px;
+}   /* End services*/
+  /* Start Works*/
+.container-fluid {
+ 	width: 1600px;
+ 	margin-left: auto;
+	margin-right: auto;
+ }
+ .row-portfolio img {
+ 	width: 290px;
+ 	height: 200px;
+ }
+ .row-portfolio {
+ 	display: flex;
+ }
+.works {
+	text-align: center;
+	padding-top: 200px;
+	padding-right: 180px; 
+}
